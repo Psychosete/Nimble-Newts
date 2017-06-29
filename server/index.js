@@ -34,7 +34,8 @@ app.post('/login', function(req, res) {
     } else {
       console.log('already exists!');
       res.send({ redirect: '/search' });
-    }
+      // redirect to new user page rather than search page.
+    } // handle address, add address, save
   });
 });
 
